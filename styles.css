@@ -207,7 +207,6 @@ section .roww:nth-child(even) div:nth-child(2) {
     background-color: rgba(255, 255, 255, 0.1);
     margin-left: 50px;
     margin-right: 50px;
-    width: 90vw;
     height: auto;
     border-radius: 15px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.1);
