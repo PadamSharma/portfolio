@@ -82,6 +82,9 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 991px) {
+    .cursor {
+        display: none;
+    }
     header {
         padding: 0 20px;
     }
