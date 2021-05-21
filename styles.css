@@ -103,7 +103,7 @@ header nav ul li a:hover {
         height: 225px;
         background: #112240;
         top: 100%;
-        left: 100%;
+        left: -100%;
         transition: 0.5s;
     }
     header nav.active {
@@ -151,7 +151,7 @@ section .roww div:nth-child(2) {
     animation: animate2 80s linear infinite;
     animation-delay: -40s;
 }
-/* @keyframes animate1 {
+@keyframes animate1 {
     0% {
         transform: translateX(100%);
     }
@@ -166,7 +166,7 @@ section .roww div:nth-child(2) {
     100% {
         transform: translateX(-200%);
     }
-} */
+}
 
 section .roww:nth-child(even) div {
     animation: animate3 80s linear infinite;
@@ -176,7 +176,7 @@ section .roww:nth-child(even) div:nth-child(2) {
     animation: animate4 80s linear infinite;
     animation-delay: -40s;
 }
-/* @keyframes animate3 {
+@keyframes animate3 {
     0% {
         transform: translateX(-100%);
     }
@@ -191,7 +191,7 @@ section .roww:nth-child(even) div:nth-child(2) {
     100% {
         transform: translateX(0%);
     }
-} */
+}
 /* ---------------------------------------ABOUT ME------------------------------------ */
 
 .row {
@@ -238,14 +238,14 @@ section .roww:nth-child(even) div:nth-child(2) {
 
 /* -----------------  HOME----------------------- */
 .home {
-    border: 3px;
-    border-color: #64ffda;
-    border-style: solid;
     border-radius: 10px;
     height: auto;
     margin-bottom: 100px;
     background-color: #64ffda10;
     color: #64ffda;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 25px #64ffda30, 0 0 50px #64ffda20;
 }
 .profile-image {
     margin-top: 1rem;
@@ -258,7 +258,6 @@ section .roww:nth-child(even) div:nth-child(2) {
 }
 .profile-image img {
     border: solid 2px #64ffda;
-
     width: 70%;
     height: 70%;
     object-fit: fill;
@@ -291,16 +290,14 @@ section .roww:nth-child(even) div:nth-child(2) {
 .allaboutme {
     color: #a8b2d1;
 }
-.profile-desc {
+.profile-desc .allaboutme {
     padding-top: 3rem;
+    font-size: 1.5rem;
 }
 /*  ----------------ABOUT ME---------------------- */
 
 .about-me {
     display: flex;
-    border: 3px;
-    border-color: #64ffda;
-    border-style: solid;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
@@ -309,6 +306,9 @@ section .roww:nth-child(even) div:nth-child(2) {
     padding-bottom: 5rem;
     margin-bottom: 100px;
     background-color: #64ffda10;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 25px #64ffda30, 0 0 50px #64ffda20;
 }
 /* .about-me-row {
     display: flex;
@@ -346,9 +346,6 @@ section .roww:nth-child(even) div:nth-child(2) {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px;
-    border-color: #64ffda;
-    border-style: solid;
     border-radius: 10px;
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -356,6 +353,9 @@ section .roww:nth-child(even) div:nth-child(2) {
     height: auto;
     margin-bottom: 100px;
     background-color: #64ffda10;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 25px #64ffda30, 0 0 50px #64ffda20;
 }
 .project-image {
     /* background-color: ; */
@@ -418,12 +418,12 @@ section .roww:nth-child(even) div:nth-child(2) {
 /* ----------------------footer---------------------------- */
 .footer {
     margin: 0;
-    border: 3px;
-    border-color: #64ffda;
-    border-style: solid;
     border-radius: 10px 10px 0 0;
     height: auto;
     background-color: #112240;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 25px #64ffda30, 0 0 50px #64ffda20;
 }
 .footer-contact {
     display: flex;
@@ -481,6 +481,10 @@ section .roww:nth-child(even) div:nth-child(2) {
     }
     .name {
         text-align: center;
+    }
+    .profile-desc .allaboutme {
+        padding-top: 1rem;
+        font-size: 0.8rem;
     }
 }
 .btn {
