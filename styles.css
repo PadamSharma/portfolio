@@ -235,18 +235,65 @@ section .roww:nth-child(even) div:nth-child(2) {
         display: none;
     }
 }
-.secondary-container {
-}
+
+/* -----------------  HOME----------------------- */
 .home {
     border: 3px;
     border-color: #64ffda;
     border-style: solid;
     border-radius: 10px;
-    height: 500px;
+    height: auto;
     margin-bottom: 100px;
     background-color: #64ffda10;
+    color: #64ffda;
 }
+.profile-image {
+    margin-top: 1rem;
+    object-fit: cover;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-image img {
+    border: solid 2px #64ffda;
 
+    width: 70%;
+    height: 70%;
+    object-fit: fill;
+    border-radius: 100%;
+    transition: 1s;
+}
+.profile-image img:hover {
+    box-shadow: 0 0 25px #64ffda, 0 0 50px #64ffda;
+    border: none;
+}
+.profile-name {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.profile-name .name {
+    font-weight: 400;
+}
+.profile-name .graduate {
+    color: #ccd6f6;
+    font-weight: 300;
+}
+.profile-name .college-dept {
+    color: #a8b2d1;
+}
+.itsme {
+    margin-top: 1rem;
+    font-weight: 100;
+}
+.allaboutme {
+    color: #a8b2d1;
+}
+.profile-desc {
+    padding-top: 3rem;
+}
 /*  ----------------ABOUT ME---------------------- */
 
 .about-me {
